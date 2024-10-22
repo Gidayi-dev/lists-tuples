@@ -54,3 +54,60 @@ print(thislist)
 thislist = ["apple", "banana", "cherry"]
 thislist.insert(2, "watermelon") #Insert "watermelon" as the third item
 print(thislist)
+
+#Python - Add List Items
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)
+
+#insert items
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(1, "orange")
+print(thislist)
+
+#extend list
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
+print(thislist)
+
+#add any iterable
+thislist = ["apple", "banana", "cherry"]
+thistuple = ("kiwi", "orange")
+thislist.extend(thistuple)
+print(thislist)
+
+#remove items
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+
+#If there are more than one item with the specified value, the remove() method removes the first occurrence
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+thislist.remove("banana")
+print(thislist)
+
+#The pop() method removes the specified index
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
+
+#Remove the last item
+
+thislist = ["apple", "banana", "cherry"]
+thislist.pop()
+print(thislist)
+
+#The del keyword also removes the specified index
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
+
+#Delete the entire list
+thislist = ["apple", "banana", "cherry"]
+del thislist
+
+#The clear() method empties the list
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)
