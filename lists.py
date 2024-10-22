@@ -111,3 +111,87 @@ del thislist
 thislist = ["apple", "banana", "cherry"]
 thislist.clear()
 print(thislist)
+
+#Loop Through a List
+#Print all items in the list, one by one
+thislist = ["apple", "banana", "cherry"]
+for X in thislist:
+    print(x)
+    
+#List Comprehension
+#List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+
+print(newlist)
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x for x in fruits if "a" in x]
+
+print(newlist)
+
+#Python - Sort Lists
+#Sort List Alphanumerically
+#List objects have a sort() method that will sort the list alphanumerically, ascending, by defaul
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+
+#Sort the list numerically
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+
+#Sort Descending
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(reverse = True)
+print(thislist)
+
+#Customize Sort Function
+def myfunc(n):
+      return abs(n - 50)
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key = myfunc)
+print(thislist)
+
+#Copy a List
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
+print(mylist)
+
+#Use the slice Operator
+#You can also make a copy of a list by using the : (slice) operator.
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist[:]
+print(mylist)
+
+#Join Two Lists
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+list3 = list1 + list2
+print(list3)
+
+#append list2 into list1
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+for x in list2:
+  list1.append(x)
+
+print(list1)
+
